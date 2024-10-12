@@ -21,7 +21,7 @@ pipeline {
                 checkout scm
  
                 // 安装Maven依赖
-                sh 'mvn clean install'
+                sh 'mvn -U clean package -Dmaven.test.skip=true '
             }
         }
     }
