@@ -24,12 +24,6 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
-        stage('delete') {
-            steps {
-                echo '清理工作目录'
-                cleanWs()
-            }
-        }
     }
     post {
         always {
