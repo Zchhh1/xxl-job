@@ -14,8 +14,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // 清理工作区
-                cleanWs()
  
                 // 检出源码
                 checkout scm
