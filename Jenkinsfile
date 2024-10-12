@@ -32,12 +32,4 @@ pipeline {
         }
     }
 
-    post {
-        success {
-            sh "echo 成功了"
-        }
-        failure {
-            sh "echo 失败了"
-        }
-    }
 }
