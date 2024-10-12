@@ -3,7 +3,7 @@ pipeline {
     environment {
         git_url     = "git@https://github.com/Zchhh1/xxl-job.git"
         remote_ip   = "192.168.66.50"
-        remote_dir  = "/var/lib/jenkins/workspace/xxl-job/"
+        remote_dir  = "/var/lib/jenkins/workspace/xxl-joba/"
     }
     options {
         buildDiscarder(logRotator(numToKeepStr: '10'))
