@@ -1,6 +1,6 @@
 pipeline {
     agent any
-        tools {
+    tools {
         maven 'maven3.9.8' // 确保这里的名称与全局工具配置中的名称一致
     }
     environment {
@@ -25,6 +25,12 @@ pipeline {
  
                 // 安装Maven依赖
                 sh 'mvn -U clean package -Dmaven.test.skip=true '
+                
+                // 输出工作目录内容
+                sh 'ls -la'
+                
+                // 归档构建产物
+                archiveArtifacts artifacts: 'xxl-job-admin/target/*.jar', fingerprint: true
             }
         }
     }
