@@ -28,10 +28,4 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            // 总是执行的步骤
-            cleanWs() // 清理工作区
-        }
-    }
 }
