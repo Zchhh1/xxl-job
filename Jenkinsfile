@@ -1,5 +1,8 @@
 pipeline {
     agent any
+        tools {
+        maven 'maven3.9.8' // 确保这里的名称与全局工具配置中的名称一致
+    }
     environment {
         git_url     = "https://github.com/Zchhh1/xxl-job.git" // 修改为正确的 HTTPS URL
         remote_ip   = "192.168.66.50"
