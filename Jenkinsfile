@@ -6,7 +6,7 @@ pipeline {
     environment {
         git_url     = "https://github.com/Zchhh1/xxl-job.git" // 修改为正确的 HTTPS URL
         remote_ip   = "192.168.66.50"
-        remote_dir  = "/var/lib/jenkins/workspace/xxl-joba/"
+//        remote_dir  = "/var/lib/jenkins/workspace/xxl-joba/"
     }
     options {
         buildDiscarder(logRotator(numToKeepStr: '10'))
